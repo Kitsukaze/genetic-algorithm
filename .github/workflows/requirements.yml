@@ -32,5 +32,8 @@ jobs:
       - name: Build binary files
         run: scripts/build.sh
 
+      - name: View utils directory
+        run: ls -la ga/utils
+
       - name: Run VRPDFD test
         run: python vrpdfd.py 6.5.1
